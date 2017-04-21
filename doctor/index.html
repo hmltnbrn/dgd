@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Card Information</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <form id="card-form" novalidate>
+        <input type="text" id="form-name" class="form-field form-text" name="name" placeholder="Name" required/>
+        <div id="name-error" class="form-error"></div>
+        <input type="url" id="form-website" class="form-field form-text" name="website" placeholder="Website" required/>
+        <div id="website-error" class="form-error"></div>
+        <div class="form-field form-radio">
+          <input type="radio" id="typeAllergist" class="form-radio" name="profession" value="allergist" required/>
+          <label for="typeAllergist">Allergist<span class="icon allergist"></span></label>
+          <input type="radio" id="typeDentist" class="form-radio" name="profession" value="dentist" required/>
+          <label for="typeDentist">Dentist<span class="icon dentist"></span></label>
+          <input type="radio" id="typeChiropractic" class="form-radio" name="profession" value="chiropractic" required/>
+          <label for="typeChiropractic">Chiropractic<span class="icon chiropractic"></span></label>
+        </div>
+        <div id="profession-error" class="form-error"></div>
+        <button type="button" id="form-submit" class="form-field">Add</button>
+      </form>
+    </header>
+    <main id="card-container">
+      <div class="start-text">No cards have been added</div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/place-cards.js"></script>
+
+  </body>
+</html>

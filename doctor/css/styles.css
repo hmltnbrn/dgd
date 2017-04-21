@@ -1,0 +1,211 @@
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  background: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+header {
+  background: #7dacc3;
+  padding: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.form-field {
+  margin: 10px;
+}
+
+.form-radio {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-text {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #cddfe8;
+  height: 30px;
+  color: #d4e2e9;
+}
+
+.form-text:focus {
+  border-bottom: 2px solid #286592;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #a1c2d3;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #a1c2d3;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #a1c2d3;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #a1c2d3;
+}
+
+button {
+  border: 0;
+  background: #ffffff;
+  box-shadow: none;
+  border-radius: 0px;
+  height: 40px;
+  color: #286592;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#card-form input[type="radio"] {
+  display: none;
+}
+
+#card-form label {
+  padding: 10px;
+  border: 1px solid #d2e2ea; 
+  cursor: pointer;
+  z-index: 90;
+  color: #e4eef2;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#card-form input[type="radio"]:checked + label {
+  background: #286592;
+  border: 1px solid #286592; 
+}
+
+#card-form label:hover {
+  background: #286592;
+  border: 1px solid #286592; 
+}
+
+.form-error {
+  color: #a82b2b;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.allergist {
+  background: url('../icons/icon-rx-white-lg.png') no-repeat center center;
+}
+
+.dentist {
+  background: url('../icons/icon-dental-white.png') no-repeat center center;
+}
+
+.chiropractic {
+  background: url('../icons/icon-chiro-white.png') no-repeat center center;
+}
+
+.icon {
+  height: 30px;
+  width: 25px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+  flex-wrap: wrap;
+  color: #c0c0c0;
+}
+
+.start-text {
+  padding: 20px;
+}
+
+.card {
+  padding: 10px;
+  background: white;
+  width: 300px;
+  height: 100px;
+  position: relative;
+  -webkit-box-shadow: 0 4px 4px -2px #e2e2e2;
+  -moz-box-shadow: 0 4px 4px -2px #e2e2e2;
+  box-shadow: 0 4px 4px -2px #e2e2e2;
+  margin: 20px;
+}
+
+.card-image {
+  background: #286592;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full {
+  width: 50px;
+  height: 50px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+.info {
+  position: absolute;
+  left: 120px;
+  bottom: 15px;
+}
+
+.doctor-name {
+  color: #286592;
+  font-weight: bold;
+  padding: 15px 5px 15px 5px;
+  font-size: 15px;
+}
+
+.doctor-prof {
+  color: #a1c2d3;
+  padding-left: 5px;
+  margin: 5px 0 5px 0;
+  text-transform: capitalize;
+}
+
+.doctor-website {
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+a:link,
+a:visited,
+a:hover {
+  color: #286592;
+  text-decoration: none;
+}
